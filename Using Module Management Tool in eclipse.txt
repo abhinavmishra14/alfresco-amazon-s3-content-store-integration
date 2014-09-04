@@ -2,13 +2,13 @@ Installing amp to alfresco war file manually...
 
 #Copy the alfresco.war to dist dir after packaing the amp file.
 
-D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_Cloud_Store\buildscript-lib>java -jar alfresco-mmt-command-line-2.1.jar install D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_Cloud_Store\appbuild\dist D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_Cloud_Store\appbuild\dist\alfresco.war -force -directory
+D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_AmazonS3_ContentStore\buildscript-lib>java -jar alfresco-mmt-command-line-2.1.jar install D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_AmazonS3_ContentStore\appbuild\dist D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_AmazonS3_ContentStore\appbuild\dist\alfresco.war -force -directory
 
 List the changes made in alfresco war:
 
-D:\Abhinav\EclipseWorkspace\Alfresco_Cloud_Store\buildscript-lib>java -jar alfresco-mmt-command-line-2.1.jar list D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_Cloud_Store\appbuild\dist\alfresco.war
+D:\Abhinav\EclipseWorkspace\Alfresco_AmazonS3_ContentStore\buildscript-lib>java -jar alfresco-mmt-command-line-2.1.jar list D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_AmazonS3_ContentStore\appbuild\dist\alfresco.war
 
-Module 'cloudstore' installed in 'D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_Cloud_Store\appbuild\dist\alfresco.war'
+Module 'cloudstore' installed in 'D:\Personal\Study\MyStuffs\Dropbox\WorkSpace\Alfresco_AmazonS3_ContentStore\appbuild\dist\alfresco.war'
 
 Example:
 
