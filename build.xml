@@ -16,8 +16,8 @@
     <property name="project.dir" value="${basedir}"/>
     <property name="build.dir" value="${project.dir}/appbuild"/>
     <property name="config.dir" value="${project.dir}/config"/>
-    <property name="jar.file" value="${build.dir}/lib/alfresco-cloud-store.jar"/>
-    <property name="amp.file" value="${build.dir}/amp/alfresco-cloud-store.amp"/>
+    <property name="jar.file" value="${build.dir}/lib/alfresco-amazon-s3-contentstore.jar"/>
+    <property name="amp.file" value="${build.dir}/amp/alfresco-amazon-s3-contentstore.amp"/>
 	<property name="alfresco.war.filename" value="alfresco.war" />
 	<property name="alfresco.war.file" value="C:/Alfresco/tomcat/webapps/alfresco.war"/>
 	
