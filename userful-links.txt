@@ -1,0 +1,2 @@
+https://docs.alfresco.com/4.2/tasks/ccs-config.html
+https://wiki.alfresco.com/wiki/CachingContentStore
