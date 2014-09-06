@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jardesc>
+	<jar path="./Alfresco_AmazonS3_ContentStore/jar/alfresco-amazon-s3-contentstore.jar"/>
+	<options overwrite="false" compress="true" exportErrors="true" exportWarnings="true" saveDescription="true" descriptionLocation="/Alfresco_AmazonS3_ContentStore/Alfresco_AmazonS3_ContentStore.jardesc" useSourceFolders="false" buildIfNeeded="true" includeDirectoryEntries="false" storeRefactorings="false"/>
+	<manifest manifestVersion="1.0" usesManifest="true" reuseManifest="false" saveManifest="false" generateManifest="true" manifestLocation="">
+	<sealing sealJar="false">
+	<packagesToSeal/>
+	<packagesToUnSeal/>
+	</sealing>
+	</manifest>
+	<selectedElements exportClassFiles="true" exportOutputFolder="false" exportJavaFiles="false">
+	  <folder path="/Alfresco_AmazonS3_ContentStore/src"/>
+	</selectedElements>
+</jardesc>
