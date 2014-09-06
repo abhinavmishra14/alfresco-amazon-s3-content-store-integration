@@ -18,8 +18,7 @@
     <property name="config.dir" value="${project.dir}/config"/>
     <property name="jar.file" value="${build.dir}/lib/alfresco-amazon-s3-contentstore.jar"/>
     <property name="amp.file" value="${build.dir}/amp/alfresco-amazon-s3-contentstore.amp"/>
-	<property name="alfresco.war.filename" value="alfresco.war" />
-	<property name="alfresco.war.file" value="C:/Alfresco/tomcat/webapps/alfresco.war"/>
+    <property name="alfresco.war.file" value="C:/Alfresco/tomcat/webapps/alfresco.war"/>
 	
     <target name="-clean">
         <delete dir="${build.dir}/amp"/>
@@ -62,19 +61,19 @@
     </target>
 	
     <target name="deploy-war" depends="build-amp" description="Deploy the war file to alfresco webapps" >
-        <echo>Installing ${amp.file} into war files..</echo>
-	<java dir="." fork="true"
-        classname="org.alfresco.repo.module.tool.ModuleManagementTool">
-        <classpath refid="class.path"/>
-        <arg line="install ${build.dir}/amp/ ${alfresco.war.file}
-                -directory -force"/>
-	</java>
-	
-	<java dir="." fork="true"
-        classname="org.alfresco.repo.module.tool.ModuleManagementTool">
-        <classpath refid="class.path"/>
-        <arg line="list ${alfresco.war.file}"/>
-	</java>
+        <echo>Installing amp into war files..</echo>
+	 <java dir="." fork="true"
+	    classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+	    <classpath refid="class.path"/>
+	    <arg line="install ${build.dir}/amp/ ${alfresco.war.file}
+	              -directory -force"/>
+	  </java>
+		
+	  <java dir="." fork="true"
+	      classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+	      <classpath refid="class.path"/>
+	      <arg line="list ${alfresco.war.file}"/>
+	  </java>
 	<echo>Deployment has been completed..</echo>
     </target>
 </project>
