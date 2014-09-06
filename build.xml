@@ -61,19 +61,19 @@
     </target>
 	
     <target name="deploy-war" depends="build-amp" description="Deploy the war file to alfresco webapps" >
-        <echo>Installing amp into war files..</echo>
-	 <java dir="." fork="true"
-	    classname="org.alfresco.repo.module.tool.ModuleManagementTool">
-	    <classpath refid="class.path"/>
-	    <arg line="install ${build.dir}/amp/ ${alfresco.war.file}
-	              -directory -force"/>
-	  </java>
-		
-	  <java dir="." fork="true"
-	      classname="org.alfresco.repo.module.tool.ModuleManagementTool">
-	      <classpath refid="class.path"/>
-	      <arg line="list ${alfresco.war.file}"/>
-	  </java>
-	<echo>Deployment has been completed..</echo>
+	      <echo>Installing amp into war files..</echo>
+		  <java dir="." fork="true"
+		    classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+		    <classpath refid="class.path"/>
+		    <arg line="install ${build.dir}/amp/ ${alfresco.war.file}
+		              -directory -force"/>
+		  </java>
+			
+		  <java dir="." fork="true"
+		      classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+		      <classpath refid="class.path"/>
+		      <arg line="list ${alfresco.war.file}"/>
+		  </java>
+		  <echo>Deployment has been completed..</echo>
     </target>
 </project>
